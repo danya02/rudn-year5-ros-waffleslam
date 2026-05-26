@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "src/basic_movement",
+    "src/nav_astar",
+    "src/square_movement",
+]

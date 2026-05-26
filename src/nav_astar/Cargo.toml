@@ -1,0 +1,20 @@
+[package]
+name = "nav_astar"
+version = "0.0.1"
+edition = "2021"
+
+[[bin]]
+name = "nav_astar"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { version = "1", features = ["backtrace"] }
+rclrs = "*"
+nav_msgs = "*"
+geometry_msgs = "*"
+std_msgs = "*"
+tf2_msgs = "*"
+builtin_interfaces = "*"
+
+# Pinned for Rust 1.75 compatibility (same as ros2_rust template)
+backtrace = "=0.3.74"
